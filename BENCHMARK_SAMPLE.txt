@@ -1,0 +1,15 @@
+11 {'detection_latency': 3, 'intervention_latency': 2, 'reaction_margin': 25, 'missed': False, 'false_alarms': 1, 'false_alarm_rate_nominal': 0.0125, 'alarm_time': 83, 'event_time': 80, 'hazard_time': 110}
+23 {'detection_latency': 4, 'intervention_latency': 2, 'reaction_margin': 24, 'missed': False, 'false_alarms': 4, 'false_alarm_rate_nominal': 0.05, 'alarm_time': 84, 'event_time': 80, 'hazard_time': 110}
+42 {'detection_latency': 6, 'intervention_latency': 2, 'reaction_margin': 22, 'missed': False, 'false_alarms': 3, 'false_alarm_rate_nominal': 0.0375, 'alarm_time': 86, 'event_time': 80, 'hazard_time': 110}
+46 {'detection_latency': 6, 'intervention_latency': 2, 'reaction_margin': 22, 'missed': False, 'false_alarms': 0, 'false_alarm_rate_nominal': 0.0, 'alarm_time': 86, 'event_time': 80, 'hazard_time': 110}
+59 {'detection_latency': 4, 'intervention_latency': 2, 'reaction_margin': 24, 'missed': False, 'false_alarms': 3, 'false_alarm_rate_nominal': 0.0375, 'alarm_time': 84, 'event_time': 80, 'hazard_time': 110}
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 720, in _warm_feature_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 704, in _warm_collaboration_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/generated/interface/models.py", line 32317, in hydrate_crdt_from_proto
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/remote.py", line 749, in __call__
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/client.py", line 150, in call
+artifact_tool.rpc.client.RemoteError: hydrateCrdtFromProto requires an empty collaborative document.
